@@ -1,0 +1,72 @@
+
+
+
+/* CSS PARA EL MENU HAMBURGUESA */ 
+
+header {
+    background-color: white;
+}
+
+header div.hamburguesa {
+    place-content: flex-start;
+}
+
+header div.hamburguesa nav{
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+}
+
+#menu, #menu-check {
+    display: none;
+}
+
+@media only screen and (max-width:900px){
+    header div.hamburguesa, header div.contenedor ul, header div.hamburguesa ul li {
+        display: inline;
+    }
+
+    header div.hamburguesa nav {
+        width: 100%;
+        display: inline;
+    }
+}
+
+@media only screen and (max-width:700px){
+    header h1 {
+        margin: 0;
+    }
+
+    header h1 a {
+        padding: 0;
+    }
+
+    header div.hamburguesa {
+        display: flex;
+        place-content: space-between;
+    }
+
+    #menu-check:not(:checked) ~ nav {
+        display: none;
+    }
+
+    #menu-check:checked ~ nav {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        color: var(--color-1);
+        background-color: var(--bgcolor-1);
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 3px solid var(--color-1);
+        border-radius: 0.3em;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+}
+
+}
+
+/* FIN CSS PARA EL MENU HAMBURGUESA */
