@@ -70,3 +70,41 @@ header div.hamburguesa nav{
 }
 
 /* FIN CSS PARA EL MENU HAMBURGUESA */
+
+/* CORROUSEL DE LA PÁGINA PRINCIPAL (no sé si se usan dos CSS diferentes o es mejor todo en el mismo archivo */
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 400%; 
+    animation: carousel 10s infinite;
+  }
+  
+  .carousel-slide img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @keyframes carousel {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
