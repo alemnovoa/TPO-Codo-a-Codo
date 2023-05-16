@@ -111,39 +111,101 @@
 
 /* CORROUSEL DE LA PÁGINA PRINCIPAL (no sé si se usan dos CSS diferentes o es mejor todo en el mismo archivo */
 
-
 .carousel-container {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-slide {
-    display: flex;
-    width: 400%;
-    animation: carousel 50s infinite;
-    -webkit-animation: carousel 50s infinite;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-  
-  .carousel-slide img {
-    width: 100%; 
-    height: auto;
-    object-fit: cover;
+
+.carousel-slide {
+  display: flex;
+  width: 400%; /* Ancho ajustado para 4 imágenes */
+  animation: carousel 20s infinite;
+}
+
+.carousel-slide img {
+  width: 25%; /* Ancho dividido en partes iguales para 4 imágenes */
+  height: 100%; /* Alto ajustado para ocupar todo el espacio disponible */
+  object-fit: cover;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+  /* ícono correo */
+
+  .content {
+    position: relative;
+    padding-bottom: 25%;
   }
   
-  @keyframes carousel {
-    0% {
-      transform: translateX(0);
+  .animated-image {
+    position: absolute;
+    bottom: 0;
+    right: 30px; /* Separación del margen derecho */
+    opacity: 0.5; /* Mayor efecto de transparencia */
+    transition: opacity 0.3s, transform 0.3s;
+    width: 100px; /* Ancho de la imagen de 100 pixeles */
+    height: auto;
+  }
+  
+  .animated-image:hover {
+    opacity: 1; /* Menos transparencia al pasar el cursor */
+    cursor: pointer;
+    transform: translateY(-25%);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content {
+      padding-bottom: 35%;
     }
-    25% {
-      transform: translateX(-100%);
+    
+    .animated-image {
+      width: 50%;
     }
-    50% {
-      transform: translateX(-200%);
-    }
-    75% {
-      transform: translateX(-300%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  }
+
+  /* footer*/
+
+  .footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer-text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    color: white;
   }
