@@ -2,70 +2,108 @@
 
 
 /* CSS PARA EL MENU HAMBURGUESA */ 
-
-header {
-    background-color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header div.hamburguesa {
-    place-content: flex-start;
+.cerrar{
+  display: none;
 }
 
-header div.hamburguesa nav{
-    width: 70%;
-    display: flex;
-    place-content: space-between;
+.checkbox:checked ~ .menu {
+  display: none;
+} 
+
+.checkbox:checked ~ .cerrar {
+  display: flex;
+} 
+
+.navbar {
+  background-color: green;
+  height: 48px;
+  padding: 10px 12px;
+  position: relative;
+
 }
 
-#menu, #menu-check {
+.checkbox, .icons {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.icons {
+  pointer-events: none;
+  font-size: 24px;
+
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.fi-br-cross {
+  display: none;
+}
+
+.checkbox:checked ~ .fi-br-menu-burger{
+  display: none;
+}
+
+.checkbox:checked ~ .fi-br-cross{
+  display: block;
+}
+
+.menu {
+  width: 200px;
+  position: absolute;
+  top: 48px;
+  right: 0px; 
+  transition: 250ms;
+}
+
+.menu li{
+  list-style: none;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: inherit;
+  background-color: brown;
+  display: block;
+  padding: 10px 12px;
+}
+
+.menu li a:hover{
+  background-color: aquamarine;
+}
+
+.checkbox:checked ~ .fi-br-cross{
+  display: block;
+}
+
+@media (min-width: 560px){
+  .checkbox, .fi-br-menu-burger, .fi-br-cross{
     display: none;
-}
+  }
 
-@media only screen and (max-width:900px){
-    header div.hamburguesa, header div.contenedor ul, header div.hamburguesa ul li {
-        display: inline;
-    }
+  .menu{
+    top: 0;
+    z-index: 1;
+    width: unset;
+    display: flex;
+    height: 48px;
+  }
 
-    header div.hamburguesa nav {
-        width: 100%;
-        display: inline;
-    }
-}
-
-@media only screen and (max-width:700px){
-    header h1 {
-        margin: 0;
-    }
-
-    header h1 a {
-        padding: 0;
-    }
-
-    header div.hamburguesa {
-        display: flex;
-        place-content: space-between;
-    }
-
-    #menu-check:not(:checked) ~ nav {
-        display: none;
-    }
-
-    #menu-check:checked ~ nav {
-        display: block;
-    }
-
-    #menu {
-        display: block;
-        color: var(--color-1);
-        background-color: var(--bgcolor-1);
-        font-size: 1.2em;
-        font-weight: bold;
-        border: 3px solid var(--color-1);
-        border-radius: 0.3em;
-        position: absolute;
-        right: 0.5em;
-        top: 0.5em;
-}
+  .menu li a{
+    height: 48px;
+    padding: 14px 12px 6px;
+  }
 
 }
 
