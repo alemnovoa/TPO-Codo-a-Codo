@@ -119,9 +119,10 @@
   
   .carousel-slide {
     display: flex;
-    width: 400%; 
-    animation: carousel 10s infinite;
-  }
+    width: 400%;
+    animation: carousel 50s infinite;
+    -webkit-animation: carousel 50s infinite;
+}
   
   .carousel-slide img {
     width: 100%; 
