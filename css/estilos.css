@@ -1,7 +1,16 @@
+/* BODY */
 
+body {
+  background-color: lightslategrey;
+}
 
 
 /* CSS PARA EL MENU HAMBURGUESA */ 
+
+h1 {
+  font-family: "Courier New", monospace;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +30,7 @@
 } 
 
 .navbar {
-  background-color: green;
+  background-color: whitesmoke;
   height: 48px;
   padding: 10px 12px;
   position: relative;
@@ -74,13 +83,14 @@
 .menu li a{
   text-decoration: none;
   color: inherit;
-  background-color: brown;
+  background-color: whitesmoke;
   display: block;
   padding: 10px 12px;
+  font-family: Arial;
 }
 
 .menu li a:hover{
-  background-color: aquamarine;
+  background-color: gray;
 }
 
 .checkbox:checked ~ .fi-br-cross{
@@ -104,6 +114,10 @@
     height: 48px;
     padding: 14px 12px 6px;
   }
+
+  /*span.COLOR{
+      background-color: pink;
+  }*/
 
 }
 
