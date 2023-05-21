@@ -1,0 +1,52 @@
+.flex-container {
+
+    display: inline-flex;
+    border-style: double;
+    border-color: brown;
+    background-color: rgb(77, 77, 59);
+    color: white;
+
+
+}
+
+.flex-container>div {
+
+    flex-wrap: wrap;
+    align-content: content;
+    color: white;
+    background-color: rgb(185, 171, 130);
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+.living-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    background-color: rgb(77, 77, 59);
+    text-align: center;
+    border-style: solid;
+    border-color: chocolate;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.artículo {
+
+    height: 300px;
+    border-style: double;
+    border-color: brown;
+    background-color: rgb(185, 171, 130);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: crimson;
+    padding: 3em;
+
+
+}
