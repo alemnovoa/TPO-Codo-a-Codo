@@ -443,10 +443,10 @@ li {
 }
 
 /* COLOR FONDO WEB */
-.fondo-web {
+/*.fondo-web {
   background-color: lightgrey;
 }
-
+*/
 
 /* footer*/
 
@@ -473,6 +473,7 @@ li {
   padding: 2em;
   margin: 0 auto;
   font-size: 2vw;
+  margin: 30px;
 
 
 }
@@ -566,4 +567,10 @@ h2 {
   color: crimson;
   margin: 10px;
   text-align: center;
+}
+
+/* FONT AWSOME FOOTER */
+
+.fa {
+  font-size: 50px;
 }
