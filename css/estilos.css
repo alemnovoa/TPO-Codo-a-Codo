@@ -493,6 +493,7 @@ li {
   border-color: brown;
   background-color: rgb(77, 77, 59);
   color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .flex-container {
@@ -531,10 +532,38 @@ li {
   background-color: rgb(185, 171, 130);
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  color: crimson;
+  color: black;
   padding: 3em;
+  font-size: 19px;
 }
 
 h2 {
+  text-align: center;
+}
+
+.h2-living {
+  font-family: 'Courier New', Courier, monospace;
+}
+.h2-comedor {
+  font-family: 'Courier New', Courier, monospace;
+}
+.h2-dormitorio {
+  font-family: 'Courier New', Courier, monospace;
+}
+.h2-decoracion {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.PRODUCTOS {
+  text-align: right;
+}
+
+.ULHORIZONTAL {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  border-color: brown;
+  background-color: rgb(185, 171, 130);
+  color: crimson;
+  margin: 10px;
   text-align: center;
 }
