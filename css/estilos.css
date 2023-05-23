@@ -1,13 +1,8 @@
+
 /* MENU HAMBURGUESA */
 
-h1 {
-  font-family: "Courier New", monospace;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.TITULOPRINCIPAL {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .cerrar {
@@ -24,10 +19,9 @@ h1 {
 
 .navbar {
   background-color: lightgrey;
-  height: 48px;
-  padding: 10px 12px;
+  padding: 10px;
   position: relative;
-
+  
 }
 
 .checkbox,
@@ -454,6 +448,7 @@ li {
   background-color: black;
   padding: 10px;
   text-align: center;
+  color: white;
 }
 
 .footer-text {
@@ -567,10 +562,4 @@ h2 {
   color: crimson;
   margin: 10px;
   text-align: center;
-}
-
-/* FONT AWSOME FOOTER */
-
-.fa {
-  font-size: 50px;
 }
