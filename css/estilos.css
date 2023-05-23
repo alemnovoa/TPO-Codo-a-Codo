@@ -1,3 +1,13 @@
+/* BODY DE SUCURSALES-CONTACTO*/
+
+.fondo-web {
+  background-image: url("/Imagenes del sitio/living2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 
 /* MENU HAMBURGUESA */
 
@@ -479,17 +489,12 @@ li {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-/* IFRAME SOBRE NOSOTROS*/
+/* SOBRE NOSOTROS */
 
-.frames {
-  display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-  justify-content: space-around;
-  background-color: sandybrown;
-  padding: 10px;
+.form-container .myform {
   margin: 10px;
 }
+
 
 /* PRODUCTOS */
 
@@ -573,5 +578,48 @@ h2 {
   color: crimson;
   margin: 10px;
   text-align: center;
+}
+
+/* SUCURSALES-CONTACTO */
+
+/* IFRAME CONTACTO*/
+
+.frames {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: space-around;
+  background-color: sandybrown;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sucursales1 {
+
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: space-around;
+  background-color: sandybrown;
+
+}
+
+.sucursales2 {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: space-around;
+  background-color: sandybrown;
+
+}
+
+.titulosucursal2 {
+  font-size: 30px;
+}
+
+.titulosucursal1 {
+  font-size: 30px;
 }
 
