@@ -8,6 +8,8 @@
   background-attachment: fixed;
 }
 
+/* ****************************************PAGINA PRINCIPAL********************************************************/
+
 /* MENU HAMBURGUESA */
 
 .TITULOPRINCIPAL {
@@ -381,7 +383,6 @@ li {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-/* FLECHAS NEXT - PREV FIN*/
 
 /* ícono correo */
 
@@ -451,7 +452,7 @@ li {
 }
 */
 
-/* footer*/
+/* footer */
 
 .footer {
   background-color: black;
@@ -466,7 +467,7 @@ li {
   color: white;
 }
 
-/* Sobre Nosotros */
+/* ****************************************SOBRE-NOSOTROS********************************************************/
 
 
 .nosotros {
@@ -543,9 +544,31 @@ li {
   }
 }
 
-.form-container .myform {
-  margin: 10px;
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #00BFFF; /* Línea más gruesa y de color celeste */
+  border-radius: 5px;
+  margin: 0 auto;
 }
+
+.form-container label,
+.form-container input,
+.form-container textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* API */
 
 .API {
   flex-wrap: wrap;
@@ -557,7 +580,7 @@ li {
   text-align: center;
 }
 
-/* PRODUCTOS */
+/* ****************************************PRODUCTOS********************************************************/
 
 .flex-container {
 
@@ -644,7 +667,7 @@ h2 {
   text-align: center;
 }
 
-/* SUCURSALES-CONTACTO */
+/* ****************************************SUCURSALES-CONTACTO********************************************************/
 
 /* IFRAME CONTACTO*/
 
