@@ -545,29 +545,6 @@ li {
 }
 
 
-.form-container {
-  width: 400px;
-  padding: 20px;
-  border: 2px solid #00BFFF; /* Línea más gruesa y de color celeste */
-  border-radius: 5px;
-  margin: 0 auto;
-}
-
-.form-container label,
-.form-container input,
-.form-container textarea {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.form-container input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
 /* API */
 
 .API {
@@ -668,6 +645,35 @@ h2 {
 }
 
 /* ****************************************SUCURSALES-CONTACTO********************************************************/
+
+/* FORMULARIO */
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #00BFFF; /* Línea más gruesa y de color celeste */
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: sandybrown;
+  
+}
+
+.form-container label,
+.form-container input,
+.form-container textarea {
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+.form-container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
 
 /* IFRAME CONTACTO*/
 
