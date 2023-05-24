@@ -490,7 +490,7 @@ li {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up)*/ 
+/* Small */ 
 @media only screen and (min-width: 600px) {
   .nosotros {
 
@@ -508,7 +508,7 @@ li {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium */
 @media only screen and (min-width: 768px) {
   .nosotros {
 
@@ -525,7 +525,7 @@ li {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up)*/ 
+/* Large */ 
 @media only screen and (min-width: 992px) {
   .nosotros {
     color: white;
