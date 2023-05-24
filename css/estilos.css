@@ -30,7 +30,7 @@
   background-color: lightgrey;
   padding: 10px;
   position: relative;
-  
+
 }
 
 .checkbox,
@@ -472,6 +472,7 @@ li {
 .nosotros {
 
   background-color: rgb(185, 171, 130);
+  opacity: 0.9;
   text-align: justify;
   border-style: solid;
   border-color: chocolate;
@@ -480,7 +481,7 @@ li {
   font-size: 2vw;
   margin: 30px;
 
-}
+}*/
 
 .letra::first-letter {
   font-style: Courier;
@@ -488,6 +489,61 @@ li {
   font-weight: 400;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/ 
+@media only screen and (min-width: 600px) {
+  .nosotros {
+
+    background-color: rgb(238, 243, 241);
+    opacity:0.9;
+    color:black
+    text-align: justify;
+    border-style: double;
+    border-color: rgb(54, 93, 52);
+    padding: 1em;
+    margin: 0 auto;
+    font-size: 2vw;
+    margin: 30px;
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nosotros {
+
+    background-color: rgb(154, 136, 84);
+    opacity:0.9;
+    text-align: justify;
+    border-style: double;
+    border-color: rgb(61, 32, 11);
+    padding: 1em;
+    margin: 0 auto;
+    font-size: 2vw;
+    margin: 30px;
+
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/ 
+@media only screen and (min-width: 992px) {
+  .nosotros {
+    color: white;
+
+    background-color: rgb(35, 34, 32);
+    opacity: 0.8;
+   text-align: justify;
+    border-style: solid;
+    border-color: chocolate;
+    padding: 2em;
+    margin: 0 auto;
+    font-size: 2vw;
+    margin: 30px;
+
+  }
+}
+
+
 
 /* SOBRE NOSOTROS */
 
@@ -556,12 +612,15 @@ h2 {
 .h2-living {
   font-family: 'Courier New', Courier, monospace;
 }
+
 .h2-comedor {
   font-family: 'Courier New', Courier, monospace;
 }
+
 .h2-dormitorio {
   font-family: 'Courier New', Courier, monospace;
 }
+
 .h2-decoracion {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -622,4 +681,3 @@ h2 {
 .titulosucursal1 {
   font-size: 30px;
 }
-
