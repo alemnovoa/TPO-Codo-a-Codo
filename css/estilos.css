@@ -392,6 +392,7 @@ li {
 }
 
 .animated-image {
+  
   position: absolute;
   bottom: 0;
   right: 30px;
@@ -399,7 +400,6 @@ li {
   opacity: 0.5;
   /* Mayor efecto de transparencia */
   transition: opacity 0.3s, transform 0.3s;
-  width: 100px;
   /* Ancho de la imagen de 100 pixeles */
   height: auto;
 }
@@ -417,7 +417,7 @@ li {
   }
 
   .animated-image {
-    width: 50%;
+    width: 20%;
   }
 }
 
